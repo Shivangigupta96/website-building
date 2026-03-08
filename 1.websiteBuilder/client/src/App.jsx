@@ -8,7 +8,7 @@ import Generate from './pages/Generate'
 import WebsiteEditor from './pages/Editor'
 import LiveSite from './pages/LiveSite.jsx'
 import Pricing from './pages/Pricing.jsx'
-export const serverUrl="http://localhost:8000"
+export const serverUrl="https://website-building.onrender.com"
 function App(){
   useGetCurrentUser()
   const {userData} =useSelector(state=>state.user)
