@@ -26,10 +26,11 @@ const port = process.env.PORT || 5000
 
 // ✅ Put CORS before other middleware
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://twowebsite-building-1.onrender.com"
-  ],
+//   origin: [
+//     "http://localhost:5173",
+//     "https://twowebsite-building-1.onrender.com"
+//   ],
+   origin: process.env.FRONTEND_URL,
   credentials: true
 }))
 
